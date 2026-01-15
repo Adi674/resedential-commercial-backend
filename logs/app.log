@@ -1,0 +1,28 @@
+2026-01-14 16:26:46 - root - INFO - setup_logging:72 - ==================================================
+2026-01-14 16:26:46 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-14 16:26:46 - root - INFO - setup_logging:74 - ==================================================
+2026-01-14 16:27:28 - root - INFO - setup_logging:72 - ==================================================
+2026-01-14 16:27:28 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-14 16:27:28 - root - INFO - setup_logging:74 - ==================================================
+2026-01-14 16:27:28 - app.main - INFO - <module>:17 - Initializing database tables...
+2026-01-14 16:27:29 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-14 16:27:29 - app.main - INFO - <module>:19 - Database tables initialized successfully
+2026-01-14 16:27:29 - app.main - INFO - startup_event:53 - ==================================================
+2026-01-14 16:27:29 - app.main - INFO - startup_event:54 - 🚀 Real Estate CRM API Starting Up
+2026-01-14 16:27:29 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-14 16:27:41 - root - INFO - setup_logging:72 - ==================================================
+2026-01-14 16:27:41 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-14 16:27:41 - root - INFO - setup_logging:74 - ==================================================
+2026-01-14 16:27:41 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-14 16:27:41 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-14 16:27:41 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-14 16:27:41 - app.main - INFO - startup_event:54 - ==================================================
+2026-01-14 16:27:41 - app.main - INFO - startup_event:55 - 🚀 Real Estate CRM API Starting Up
+2026-01-14 16:27:41 - app.main - INFO - startup_event:56 - ==================================================
+2026-01-14 16:27:41 - app.main - INFO - startup_event:57 - Environment: development
+2026-01-14 16:27:41 - app.main - INFO - startup_event:58 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-14 16:27:41 - app.main - INFO - startup_event:59 - JWT Expiration: 1440 minutes
+2026-01-14 16:27:41 - app.main - INFO - startup_event:60 - ==================================================
+2026-01-14 16:29:43 - app.main - INFO - shutdown_event:65 - ==================================================
+2026-01-14 16:29:43 - app.main - INFO - shutdown_event:66 - 🛑 Real Estate CRM API Shutting Down
+2026-01-14 16:29:43 - app.main - INFO - shutdown_event:67 - ==================================================

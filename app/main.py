@@ -4,12 +4,20 @@ from app.routers import auth, listings, leads, logs
 from fastapi.exceptions import RequestValidationError
 from fastapi import FastAPI, Request, status
 from fastapi.responses import JSONResponse
+from app.core.logging_config import setup_logging
+import logging
+import os
+
+setup_logging()
+logger = logging.getLogger(__name__)
 
 # ==========================================
 # 1. INITIALIZE DATABASE
 # ==========================================
 # This creates the tables (users, listings, etc.) if they don't exist yet.
+logger.info("Initializing database tables...")
 Base.metadata.create_all(bind=engine)
+logger.info("Database tables initialized successfully")
 
 # ==========================================
 # 2. SETUP APPLICATION
@@ -40,6 +48,23 @@ app.add_middleware(
     allow_headers=["*"],         # Allow all headers
 )
 
+@app.on_event("startup")
+async def startup_event():
+    """Log application startup"""
+    logger.info("=" * 50)
+    logger.info("🚀 Real Estate CRM API Starting Up")
+    logger.info("=" * 50)
+    logger.info(f"Environment: {os.getenv('ENVIRONMENT', 'development')}")
+    logger.info(f"Database: {os.getenv('DATABASE_URL', 'Not Set')[:50]}...")
+    logger.info(f"JWT Expiration: {os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES', 'Not Set')} minutes")
+    logger.info("=" * 50)
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Log application shutdown"""
+    logger.info("=" * 50)
+    logger.info("🛑 Real Estate CRM API Shutting Down")
+    logger.info("=" * 50)
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):

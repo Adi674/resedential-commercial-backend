@@ -63,6 +63,29 @@ class ValidatorMixin:
             raise ValueError('Name must be at least 2 characters long')
         return v.title()
 
+    @field_validator('email', check_fields=False)
+    @classmethod
+    def validate_email(cls, v: Optional[str]):
+        if v is None or v == "" or v == "string":  # ✅ FIX: Allow empty/None/placeholder
+            return None
+        # Only validate if actually provided
+        v = v.strip()
+        if '@' not in v or '.' not in v.split('@')[-1]:
+            raise ValueError('Invalid email format')
+        return v.lower()
+
+# Separate mixin for text fields
+class TextValidatorMixin:
+    @field_validator('message', 'notes', check_fields=False)  # Add check_fields=False
+    @classmethod
+    def validate_text_fields(cls, v: Optional[str]):
+        if v is None:
+            return v
+        cleaned = v.strip()
+        if len(cleaned) > 2000:
+            raise ValueError('Text too long (max 2000 characters)')
+        return cleaned
+
 # =======================
 # 4. PUBLIC FORMS (Leads)
 # =======================
@@ -70,14 +93,14 @@ class ValidatorMixin:
 class BrochureRequest(BaseModel, ValidatorMixin):
     name: str
     phone: str
-    listing_id: str 
+    listing_id: UUID 
     email: Optional[str] = None
 
-class QueryCreate(BaseModel, ValidatorMixin):
+class QueryCreate(BaseModel, ValidatorMixin, TextValidatorMixin):
     name: str
     phone: str
     query_source: str = "Website"
-    listing_id: Optional[str] = None
+    listing_id: Optional[UUID] = None
     
     # Optional fields
     email: Optional[str] = None
@@ -86,6 +109,22 @@ class QueryCreate(BaseModel, ValidatorMixin):
     property_type: Optional[str] = None
     user_type: Optional[str] = None
     preferred_time: Optional[str] = None
+
+    @field_validator('listing_id', mode='before')
+    @classmethod
+    def validate_listing_id(cls, v):
+        """Convert empty string to None for optional UUID field"""
+        if v == "" or v == "string":
+            return None
+        return v
+
+    @field_validator('budget', 'property_type', 'user_type', 'preferred_time', mode='before')
+    @classmethod
+    def clean_string_fields(cls, v):
+        """Remove placeholder 'string' values"""
+        if v == "string" or v == "":
+            return None
+        return v
 
     
 
