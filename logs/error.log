@@ -1,0 +1,21 @@
+2026-01-16 13:38:24 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-16 14:29:28 - app.core.database - ERROR - get_db:51 - Database session error: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "1"
+LINE 3: WHERE listings.listing_id = '1'::UUID 
+                                    ^
+
+[SQL: SELECT listings.listing_id AS listings_listing_id, listings.title AS listings_title, listings.description AS listings_description, listings.price AS listings_price, listings.location AS listings_location, listings.size AS listings_size, listings.property_type AS listings_property_type, listings.listing_category AS listings_listing_category, listings.status AS listings_status, listings.images AS listings_images, listings.brochure_url AS listings_brochure_url, listings.created_at AS listings_created_at, listings.updated_at AS listings_updated_at 
+FROM listings 
+WHERE listings.listing_id = %(listing_id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'listing_id_1': '1', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-01-16 15:14:04 - app.core.database - ERROR - get_db:51 - Database session error: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "7"
+LINE 3: WHERE listings.listing_id = '7'::UUID 
+                                    ^
+
+[SQL: SELECT listings.listing_id AS listings_listing_id, listings.title AS listings_title, listings.description AS listings_description, listings.price AS listings_price, listings.location AS listings_location, listings.size AS listings_size, listings.property_type AS listings_property_type, listings.listing_category AS listings_listing_category, listings.status AS listings_status, listings.images AS listings_images, listings.brochure_url AS listings_brochure_url, listings.created_at AS listings_created_at, listings.updated_at AS listings_updated_at 
+FROM listings 
+WHERE listings.listing_id = %(listing_id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'listing_id_1': '7', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)

@@ -37,6 +37,7 @@ origins = [
     "http://localhost:5173", # Vite Default
     "http://localhost:3000", # React Default
     "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
     # Add your production domain here later, e.g., "https://my-real-estate.com"
 ]
 

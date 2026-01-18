@@ -26,3 +26,94 @@
 2026-01-14 16:29:43 - app.main - INFO - shutdown_event:65 - ==================================================
 2026-01-14 16:29:43 - app.main - INFO - shutdown_event:66 - 🛑 Real Estate CRM API Shutting Down
 2026-01-14 16:29:43 - app.main - INFO - shutdown_event:67 - ==================================================
+2026-01-15 18:54:18 - root - INFO - setup_logging:72 - ==================================================
+2026-01-15 18:54:18 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-15 18:54:18 - root - INFO - setup_logging:74 - ==================================================
+2026-01-15 18:54:18 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-15 18:54:18 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-15 18:54:18 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-15 18:54:18 - app.main - INFO - startup_event:54 - ==================================================
+2026-01-15 18:54:18 - app.main - INFO - startup_event:55 - 🚀 Real Estate CRM API Starting Up
+2026-01-15 18:54:18 - app.main - INFO - startup_event:56 - ==================================================
+2026-01-15 18:54:18 - app.main - INFO - startup_event:57 - Environment: development
+2026-01-15 18:54:18 - app.main - INFO - startup_event:58 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-15 18:54:18 - app.main - INFO - startup_event:59 - JWT Expiration: 1440 minutes
+2026-01-15 18:54:18 - app.main - INFO - startup_event:60 - ==================================================
+2026-01-15 18:56:10 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-15 18:56:11 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-16 13:36:57 - root - INFO - setup_logging:72 - ==================================================
+2026-01-16 13:36:57 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-16 13:36:57 - root - INFO - setup_logging:74 - ==================================================
+2026-01-16 13:36:57 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-16 13:36:57 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-16 13:36:57 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-16 13:36:57 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-16 13:36:57 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-16 13:36:57 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-16 13:36:57 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-16 13:36:57 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-16 13:36:57 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-16 13:36:57 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-16 13:37:38 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-16 13:37:38 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-16 13:37:38 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-16 13:38:24 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-16 13:38:24 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-16 13:38:30 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-16 13:38:30 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-16 13:38:30 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-16 14:29:28 - app.core.database - ERROR - get_db:51 - Database session error: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "1"
+LINE 3: WHERE listings.listing_id = '1'::UUID 
+                                    ^
+
+[SQL: SELECT listings.listing_id AS listings_listing_id, listings.title AS listings_title, listings.description AS listings_description, listings.price AS listings_price, listings.location AS listings_location, listings.size AS listings_size, listings.property_type AS listings_property_type, listings.listing_category AS listings_listing_category, listings.status AS listings_status, listings.images AS listings_images, listings.brochure_url AS listings_brochure_url, listings.created_at AS listings_created_at, listings.updated_at AS listings_updated_at 
+FROM listings 
+WHERE listings.listing_id = %(listing_id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'listing_id_1': '1', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-01-16 14:35:28 - app.routers.leads - INFO - download_brochure:82 - Brochure download: 7428986796 for listing dfa3c7e4-3503-488e-8091-aaef488a52c5
+2026-01-16 14:39:47 - app.core.database - INFO - receive_close:40 - Database connection closed
+2026-01-16 14:39:47 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-16 14:40:11 - app.routers.leads - INFO - download_brochure:82 - Brochure download: 07428986796 for listing dfa3c7e4-3503-488e-8091-aaef488a52c5
+2026-01-16 15:13:16 - root - INFO - setup_logging:72 - ==================================================
+2026-01-16 15:13:16 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-16 15:13:16 - root - INFO - setup_logging:74 - ==================================================
+2026-01-16 15:13:16 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-16 15:13:16 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-16 15:13:16 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-16 15:13:16 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-16 15:13:16 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-16 15:13:16 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-16 15:13:16 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-16 15:13:16 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-16 15:13:16 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-16 15:13:16 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-16 15:14:04 - app.core.database - ERROR - get_db:51 - Database session error: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "7"
+LINE 3: WHERE listings.listing_id = '7'::UUID 
+                                    ^
+
+[SQL: SELECT listings.listing_id AS listings_listing_id, listings.title AS listings_title, listings.description AS listings_description, listings.price AS listings_price, listings.location AS listings_location, listings.size AS listings_size, listings.property_type AS listings_property_type, listings.listing_category AS listings_listing_category, listings.status AS listings_status, listings.images AS listings_images, listings.brochure_url AS listings_brochure_url, listings.created_at AS listings_created_at, listings.updated_at AS listings_updated_at 
+FROM listings 
+WHERE listings.listing_id = %(listing_id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'listing_id_1': '7', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-01-16 15:20:46 - app.routers.leads - INFO - create_query:165 - Query created: 07428986796 - Website
+2026-01-16 15:22:22 - app.routers.leads - INFO - create_query:165 - Query created: 9891757754 - Website
+2026-01-16 15:22:58 - app.routers.leads - INFO - download_brochure:82 - Brochure download: 07428986796 for listing dfa3c7e4-3503-488e-8091-aaef488a52c5
+2026-01-16 15:24:07 - app.routers.leads - INFO - create_query:165 - Query created: 9891757754 - Website
+2026-01-16 15:30:40 - app.routers.leads - INFO - create_query:165 - Query created: 9891757754 - Website
+2026-01-18 08:35:25 - root - INFO - setup_logging:72 - ==================================================
+2026-01-18 08:35:25 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-18 08:35:25 - root - INFO - setup_logging:74 - ==================================================
+2026-01-18 08:35:25 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-18 08:35:25 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-18 08:35:25 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-18 08:35:25 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-18 08:35:25 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-18 08:35:25 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-18 08:35:25 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-18 08:35:25 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-18 08:35:25 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-18 08:35:25 - app.main - INFO - startup_event:61 - ==================================================
