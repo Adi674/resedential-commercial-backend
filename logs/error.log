@@ -19,3 +19,11 @@ WHERE listings.listing_id = %(listing_id_1)s::UUID
  LIMIT %(param_1)s]
 [parameters: {'listing_id_1': '7', 'param_1': 1}]
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-01-18 18:30:04 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:32:34 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:32:42 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:33:03 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-20 16:34:55 - app.core.security - ERROR - get_current_user:69 - JWT decode error: Signature has expired.
+2026-01-20 16:34:55 - app.core.database - ERROR - get_db:51 - Database session error: 401: Could not validate credentials
+2026-01-22 09:17:09 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-22 09:17:12 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password

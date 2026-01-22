@@ -117,3 +117,89 @@ WHERE listings.listing_id = %(listing_id_1)s::UUID
 2026-01-18 08:35:25 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
 2026-01-18 08:35:25 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
 2026-01-18 08:35:25 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-18 08:45:45 - app.routers.leads - INFO - download_brochure:82 - Brochure download: 8851632532 for listing dfa3c7e4-3503-488e-8091-aaef488a52c5
+2026-01-18 08:47:39 - app.routers.leads - INFO - create_query:165 - Query created: 07428986796 - Website
+2026-01-18 08:53:54 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-18 08:53:54 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-18 08:53:55 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-18 17:26:47 - root - INFO - setup_logging:72 - ==================================================
+2026-01-18 17:26:47 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-18 17:26:47 - root - INFO - setup_logging:74 - ==================================================
+2026-01-18 17:26:47 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-18 17:26:47 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-18 17:26:47 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-18 17:26:47 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-18 17:26:47 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-18 17:26:47 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-18 17:26:47 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-18 17:26:47 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-18 17:26:47 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-18 17:26:47 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-18 17:28:36 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-18 17:31:29 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-18 18:29:13 - root - INFO - setup_logging:72 - ==================================================
+2026-01-18 18:29:13 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-18 18:29:13 - root - INFO - setup_logging:74 - ==================================================
+2026-01-18 18:29:13 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-18 18:29:13 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-18 18:29:13 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-18 18:29:13 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-18 18:29:13 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-18 18:29:13 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-18 18:29:13 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-18 18:29:13 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-18 18:29:13 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-18 18:29:13 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-18 18:29:39 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-18 18:30:04 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-18 18:30:04 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:30:19 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-18 18:30:19 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-18 18:30:19 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-18 18:32:34 - app.routers.auth - INFO - login:19 - Login attempt for user: team
+2026-01-18 18:32:34 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:32:42 - app.routers.auth - INFO - login:19 - Login attempt for user: team
+2026-01-18 18:32:42 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:33:03 - app.routers.auth - INFO - login:19 - Login attempt for user: team
+2026-01-18 18:33:03 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-18 18:34:09 - app.routers.auth - INFO - login:19 - Login attempt for user: amit_sales
+2026-01-18 18:34:09 - app.routers.auth - INFO - login:33 - Successful login for user: amit_sales
+2026-01-18 18:34:09 - app.routers.auth - INFO - read_users_me:38 - User info requested: amit_sales
+2026-01-20 16:34:05 - root - INFO - setup_logging:72 - ==================================================
+2026-01-20 16:34:05 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-20 16:34:05 - root - INFO - setup_logging:74 - ==================================================
+2026-01-20 16:34:05 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-20 16:34:05 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-20 16:34:05 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-20 16:34:05 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-20 16:34:05 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-20 16:34:05 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-20 16:34:05 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-20 16:34:05 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-20 16:34:05 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-20 16:34:05 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-20 16:34:55 - app.core.security - ERROR - get_current_user:69 - JWT decode error: Signature has expired.
+2026-01-20 16:34:55 - app.core.database - ERROR - get_db:51 - Database session error: 401: Could not validate credentials
+2026-01-22 09:15:05 - root - INFO - setup_logging:72 - ==================================================
+2026-01-22 09:15:05 - root - INFO - setup_logging:73 - Logging system initialized
+2026-01-22 09:15:05 - root - INFO - setup_logging:74 - ==================================================
+2026-01-22 09:15:05 - app.main - INFO - <module>:18 - Initializing database tables...
+2026-01-22 09:15:05 - app.core.database - INFO - receive_connect:36 - Database connection established
+2026-01-22 09:15:05 - app.main - INFO - <module>:20 - Database tables initialized successfully
+2026-01-22 09:15:05 - app.main - INFO - startup_event:55 - ==================================================
+2026-01-22 09:15:05 - app.main - INFO - startup_event:56 - 🚀 Real Estate CRM API Starting Up
+2026-01-22 09:15:05 - app.main - INFO - startup_event:57 - ==================================================
+2026-01-22 09:15:05 - app.main - INFO - startup_event:58 - Environment: development
+2026-01-22 09:15:05 - app.main - INFO - startup_event:59 - Database: postgresql://postgres.ndofgyvlgcychpgklieb:9891757...
+2026-01-22 09:15:05 - app.main - INFO - startup_event:60 - JWT Expiration: 1440 minutes
+2026-01-22 09:15:05 - app.main - INFO - startup_event:61 - ==================================================
+2026-01-22 09:15:53 - app.routers.auth - INFO - login:19 - Login attempt for user: admin
+2026-01-22 09:15:53 - app.routers.auth - INFO - login:33 - Successful login for user: admin
+2026-01-22 09:15:53 - app.routers.auth - INFO - read_users_me:38 - User info requested: admin
+2026-01-22 09:17:09 - app.routers.auth - INFO - login:19 - Login attempt for user: team
+2026-01-22 09:17:09 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-22 09:17:12 - app.routers.auth - INFO - login:19 - Login attempt for user: team
+2026-01-22 09:17:12 - app.core.database - ERROR - get_db:51 - Database session error: 401: Incorrect username or password
+2026-01-22 09:18:35 - app.routers.auth - INFO - login:19 - Login attempt for user: amit_sales
+2026-01-22 09:18:35 - app.routers.auth - INFO - login:33 - Successful login for user: amit_sales
+2026-01-22 09:18:35 - app.routers.auth - INFO - read_users_me:38 - User info requested: amit_sales
